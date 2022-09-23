@@ -37,6 +37,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
 @Composable
 fun JetpackComposeTutorial(title: String, paragraph1: String, paragraph2: String) {
 
