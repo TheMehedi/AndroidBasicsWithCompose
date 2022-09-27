@@ -1,4 +1,4 @@
-package com.themehedi.androidbasicswithcompose.HappyBirthday
+package com.themehedi.androidbasicswithcompose.happy_birthday
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

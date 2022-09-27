@@ -1,4 +1,4 @@
-package com.themehedi.androidbasicswithcompose.Practice1
+package com.themehedi.androidbasicswithcompose.practice1
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">AndroidBasicsWithCompose</string>
-    
+
     <!--Happy Birthday strings-->
     <string name="happy_birthday_text">Happy Birthday Ayaan!</string>
     <string name="signature_text">- from Mehedi</string>
-    
+
     <!--Android Basics With Compose strings-->
     <string name="title">Jetpack Compose tutorial</string>
     <string name="paragraph1">Jetpack Compose is a modern toolkit for building native Android UI. Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.</string>

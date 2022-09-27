@@ -12,8 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasicsWithCompose"
         tools:targetApi="31">
+
         <activity
-            android:name=".Practice1.MainActivity"
+            android:name=".main.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AndroidBasicsWithCompose"/>
+
+        <activity
+            android:name=".practice1.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AndroidBasicsWithCompose">
             <intent-filter>
@@ -26,10 +32,11 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
-            android:name=".HappyBirthday.MainActivity"
+            android:name=".happy_birthday.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.AndroidBasicsWithCompose"/>
+            android:theme="@style/Theme.AndroidBasicsWithCompose" />
     </application>
 
 </manifest>
