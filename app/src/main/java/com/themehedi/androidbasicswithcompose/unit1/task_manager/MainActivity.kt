@@ -1,16 +1,15 @@
-package com.themehedi.androidbasicswithcompose.unit1.compose_article
+package com.themehedi.androidbasicswithcompose.unit1.task_manager
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -30,55 +29,38 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    //JetpackComposeTutorial("Android")
+                    TaskManager(stringResource(R.string.task_completed), stringResource(R.string.nice_work))
                 }
             }
         }
     }
 }
 
-
 @Composable
-fun JetpackComposeTutorial(title: String, paragraph1: String, paragraph2: String) {
+fun TaskManager(text1: String, text2: String) {
+    
+    Column(modifier = Modifier.fillMaxSize(),
+    verticalArrangement = Arrangement.Center,
+    horizontalAlignment = Alignment.CenterHorizontally) {
 
-    val image = painterResource(id = R.drawable.bg_compose_background)
-    Column() {
-        Image(painter = image,
-            contentDescription = null)
+        val image = painterResource(id = R.drawable.ic_task_completed);
 
-        Text(text = title,
+        Image(painter = image, contentDescription = null)
+
+        Text(text = text1,
         fontSize = 24.sp,
-        modifier = Modifier
-            .padding(start = 16.dp, end = 16.dp, bottom = 16.dp, top = 16.dp)
-        )
+        modifier = Modifier.padding(top = 24.dp, bottom = 8.dp))
 
-        Text(text = paragraph1,
-        fontSize = 16.sp,
-        modifier = Modifier
-            .padding(start = 16.dp, end = 16.dp)
-        )
-
-        Text(text = paragraph2,
-        fontSize = 16.sp,
-        modifier = Modifier
-            .padding(start = 16.dp, end = 16.dp, bottom = 16.dp, top = 16.dp)
-        )
+        Text(text = text1,
+            fontSize = 16.sp)
     }
-
 }
 
-
-@Preview(
-    showBackground = true,
-    showSystemUi = true
-)
+@Preview(showBackground = true,
+showSystemUi = true)
 @Composable
 fun DefaultPreview() {
     AndroidBasicsWithComposeTheme {
-        JetpackComposeTutorial(
-            stringResource(R.string.title),
-            stringResource(R.string.paragraph1),
-            stringResource(R.string.paragraph2)
-        )
+        TaskManager(stringResource(R.string.task_completed), stringResource(R.string.nice_work))
     }
 }

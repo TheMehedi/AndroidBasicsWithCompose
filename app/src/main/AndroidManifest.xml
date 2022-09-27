@@ -12,29 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasicsWithCompose"
         tools:targetApi="31">
-
         <activity
-            android:name=".main.MainActivity"
+            android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.AndroidBasicsWithCompose"/>
-
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AndroidBasicsWithCompose">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name=".practice1.MainActivity"
+            android:name=".unit1.task_manager.MainActivity"
             android:exported="true"
+            android:label="@string/title_activity_main"
             android:theme="@style/Theme.AndroidBasicsWithCompose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
-
         <activity
-            android:name=".happy_birthday.MainActivity"
+            android:name=".main.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AndroidBasicsWithCompose" />
+        <activity
+            android:name=".unit1.compose_article.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AndroidBasicsWithCompose" />
+        <activity
+            android:name=".unit1.happy_birthday.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AndroidBasicsWithCompose" />
     </application>

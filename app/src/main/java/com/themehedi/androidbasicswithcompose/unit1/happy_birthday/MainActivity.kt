@@ -1,4 +1,4 @@
-package com.themehedi.androidbasicswithcompose.happy_birthday
+package com.themehedi.androidbasicswithcompose.unit1.happy_birthday
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -90,7 +90,7 @@ fun BirthdayGreetingWithImage(message: String, from: String) {
 fun BirthdayCardPreview() {
     AndroidBasicsWithComposeTheme() {
         BirthdayGreetingWithImage(
-            stringResource(com.themehedi.androidbasicswithcompose.R.string.happy_birthday_text),
+            stringResource(R.string.happy_birthday_text),
             stringResource(R.string.signature_text)
         )
     }
