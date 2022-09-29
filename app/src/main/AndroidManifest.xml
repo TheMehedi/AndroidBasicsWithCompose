@@ -22,7 +22,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".unit1.task_manager.MainActivity"
+            android:name=".unit1.compose_quadrant.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.AndroidBasicsWithCompose">
@@ -31,7 +31,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
+        <activity
+            android:name=".unit1.task_manager.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AndroidBasicsWithCompose"></activity>
         <activity
             android:name=".main.MainActivity"
             android:exported="false"
